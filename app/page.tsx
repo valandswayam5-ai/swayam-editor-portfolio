@@ -126,7 +126,13 @@ export default function Home() {
 
       <section className="about-section" id="about">
         <div className="about-top"><span className="section-number">A LITTLE ABOUT ME</span><span>SWAYAM®</span></div>
-        <div className="about-main"><h2 className="reveal">Made with<br /><em>intention.</em></h2><div className="about-copy reveal"><p>I’m Swayam, a video editor focused on turning ideas and footage into engaging visual experiences. I care about the small details that make a story flow.</p><a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer">LET’S CREATE SOMETHING <ArrowUpRight size={16} /></a></div></div>
+        <div className="about-main"><h2 className="reveal">Made with<br /><em>intention.</em></h2><div className="about-copy reveal"><p>I’m Swayam, a 17-year-old video editor from India, currently studying Class 12 Commerce under GSEB. Alongside school, I’m building my editing journey—turning raw footage into engaging visual stories with rhythm, detail and purpose.</p><a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer">LET’S CREATE SOMETHING <ArrowUpRight size={16} /></a></div></div>
+        <div className="about-details-panel reveal">
+          <div className="about-detail"><span>01 / EDUCATION</span><h3>Class 12 · Commerce</h3><p>Gujarat Secondary and Higher Secondary Education Board (GSEB)</p></div>
+          <div className="about-detail"><span>02 / CREATIVE FOCUS</span><h3>Video Editing</h3><p>Short-form content, creator videos, real-estate visuals and cinematic edits</p></div>
+          <div className="about-detail tools-detail"><span>03 / TOOLS & APPS</span><h3>My everyday toolkit</h3><div className="tool-chips"><span>Adobe Premiere Pro</span><span>ChatGPT</span><span>GitHub</span><span>Canva</span><span>CapCut</span><span>Vercel</span><span>Dropbox</span></div></div>
+          <div className="about-detail"><span>04 / APPROACH</span><h3>Curious by nature</h3><p>Learning, experimenting and improving through every project—one frame at a time</p></div>
+        </div>
         <footer className="footer"><a className="brand" href="#top">SWAYAM<span>®</span></a><span>INDEPENDENT VIDEO EDITOR · INDIA</span><a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer"><Instagram size={15} /> @VISION.SWYM <ArrowUpRight size={14} /></a><span>© 2026 · ALL RIGHTS RESERVED</span></footer>
       </section>
     </main>
