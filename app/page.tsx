@@ -124,16 +124,37 @@ export default function Home() {
         <div className="showreel-player reveal"><video src={videoSources["showcase-reel.mp4"]} controls playsInline preload="metadata" /><span><Play size={13} fill="currentColor" /> SHOWREEL · 2026</span></div>
       </section>
 
-      <section className="about-section" id="about">
-        <div className="about-top"><span className="section-number">A LITTLE ABOUT ME</span><span>SWAYAM®</span></div>
-        <div className="about-main"><h2 className="reveal">Made with<br /><em>intention.</em></h2><div className="about-copy reveal"><p>I’m Swayam, a 17-year-old video editor from India, currently studying Class 12 Commerce under GSEB. Alongside school, I’m building my editing journey—turning raw footage into engaging visual stories with rhythm, detail and purpose.</p><a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer">LET’S CREATE SOMETHING <ArrowUpRight size={16} /></a></div></div>
-        <div className="about-details-panel reveal">
-          <div className="about-detail"><span>01 / EDUCATION</span><h3>Class 12 · Commerce</h3><p>Gujarat Secondary and Higher Secondary Education Board (GSEB)</p></div>
-          <div className="about-detail"><span>02 / CREATIVE FOCUS</span><h3>Video Editing</h3><p>Short-form content, creator videos, real-estate visuals and cinematic edits</p></div>
-          <div className="about-detail tools-detail"><span>03 / TOOLS & APPS</span><h3>My everyday toolkit</h3><div className="tool-chips"><span>Adobe Premiere Pro</span><span>ChatGPT</span><span>GitHub</span><span>Canva</span><span>CapCut</span><span>Vercel</span><span>Dropbox</span></div></div>
-          <div className="about-detail"><span>04 / APPROACH</span><h3>Curious by nature</h3><p>Learning, experimenting and improving through every project—one frame at a time</p></div>
+      <section className="about-section about-profile-section" id="about">
+        <div className="about-top"><span className="section-number">05 / THE PERSON BEHIND THE WORK</span><span>SWAYAM®</span></div>
+        <div className="about-title-wrap reveal"><span className="about-title-pill">A LITTLE ABOUT ME</span><h2>More than<br /><em>the edit.</em></h2><p>A curious mind, a creative process, and a love for making things move.</p></div>
+        <div className="about-profile-grid">
+          <div className="about-portrait-placeholder reveal" aria-label="Portrait photo will be added later">
+            <div className="portrait-orbit portrait-orbit-one" /><div className="portrait-orbit portrait-orbit-two" />
+            <span className="portrait-monogram">S<span>.</span></span>
+            <span className="portrait-placeholder-label">YOUR PORTRAIT<br />WILL LIVE HERE</span>
+            <span className="portrait-index">PROFILE / 01</span>
+          </div>
+          <div className="about-profile-copy reveal">
+            <span className="about-eyebrow">HELLO, I’M SWAYAM</span>
+            <h3>Learning. Creating.<br /><em>Building what’s next.</em></h3>
+            <p>I’m a 17-year-old creator from India, currently studying Class 12 Commerce under GSEB. I’m exploring the intersection of video, design and technology—building my skills through hands-on projects and continuous experimentation.</p>
+            <p>My focus is creating thoughtful visual content, learning how digital products work, and turning ideas into real things. I’m still growing, and that’s part of the process.</p>
+            <div className="about-contact-row"><span>FIND ME ONLINE</span><a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer">@VISION.SWYM <ArrowUpRight size={14} /></a></div>
+          </div>
         </div>
-        <footer className="footer"><a className="brand" href="#top">SWAYAM<span>®</span></a><span>INDEPENDENT VIDEO EDITOR · INDIA</span><a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer"><Instagram size={15} /> @VISION.SWYM <ArrowUpRight size={14} /></a><span>© 2026 · ALL RIGHTS RESERVED</span></footer>
+        <div className="about-info-panel reveal">
+          <div className="about-panel-heading"><span>THE DETAILS</span><p>A snapshot of what I’m learning, creating and exploring.</p></div>
+          <div className="about-info-grid">
+            <div className="about-info-card"><span>01 / SKILLS</span><h3>What I work on</h3><div className="about-tags"><i>Video Editing</i><i>Web Development</i><i>Automation</i><i>Software Development</i><i>App Development</i></div></div>
+            <div className="about-info-card"><span>02 / LANGUAGES</span><h3>How I communicate</h3><div className="about-tags"><i>Hindi</i><i>English</i><i>Gujarati</i></div></div>
+            <div className="about-info-card"><span>03 / SOFT SKILLS</span><h3>How I approach things</h3><div className="about-tags"><i>Creativity</i><i>Problem-solving</i><i>Curiosity</i><i>Fast learning</i><i>Communication</i></div></div>
+            <div className="about-info-card"><span>04 / INTERESTS</span><h3>Always exploring</h3><div className="about-tags"><i>Filmmaking</i><i>AI</i><i>Technology</i></div></div>
+            <div className="about-info-card about-tools-card"><span>05 / TOOLS & APPS</span><h3>My current toolkit</h3><div className="about-tags"><i>Adobe Premiere Pro</i><i>Canva</i><i>CapCut</i><i>ChatGPT</i><i>GitHub</i><i>Vercel</i><i>Dropbox</i></div></div>
+            <div className="about-info-card"><span>06 / EDUCATION</span><h3>Currently studying</h3><p>Class 12 Commerce · Gujarat Secondary and Higher Secondary Education Board (GSEB)</p></div>
+          </div>
+        </div>
+        <div className="about-bottom-line"><span>CURIOUS BY NATURE. CREATIVE BY CHOICE.</span><span>ONE STEP AT A TIME ↗</span></div>
+        <footer className="footer"><a className="brand" href="#top">SWAYAM<span>®</span></a><span>INDEPENDENT CREATOR · INDIA</span><a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer"><Instagram size={15} /> @VISION.SWYM <ArrowUpRight size={14} /></a><span>© 2026 · ALL RIGHTS RESERVED</span></footer>
       </section>
     </main>
   );
