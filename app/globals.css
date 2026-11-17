@@ -82,3 +82,13 @@ button,video{font:inherit}
 .hero-audio-toggle{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:8px 10px;border:1px solid rgba(0,0,0,.28);background:transparent;color:#171815;font:8px 'DM Mono',monospace;letter-spacing:.08em;cursor:pointer;transition:background .2s,color .2s}
 .hero-audio-toggle:hover{background:#111;color:#fff}
 @media(max-width:600px){.hero-media{padding:9px}.hero-media-footer{font-size:7px}.hero-audio-toggle{font-size:7px;padding:7px 8px}}
+
+
+/* Full-bleed showreel background in hero */
+.hero-background-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:64% center;z-index:-2;filter:saturate(.82) contrast(1.04)}
+.hero-shade{z-index:-1;background:linear-gradient(90deg,rgba(5,7,7,.88) 0%,rgba(5,7,7,.68) 38%,rgba(5,7,7,.18) 76%,rgba(5,7,7,.24) 100%),linear-gradient(0deg,rgba(5,7,7,.48),transparent 34%,rgba(5,7,7,.2))}
+.hero-layout{grid-template-columns:minmax(0,1fr);z-index:1;pointer-events:none}
+.hero-copy{pointer-events:auto;max-width:760px}
+.hero-audio-toggle{position:absolute;right:5.2%;bottom:68px;z-index:3;display:inline-flex;align-items:center;gap:8px;padding:10px 13px;border:1px solid rgba(255,255,255,.48);background:rgba(7,8,8,.48);backdrop-filter:blur(10px);color:#fff;font:8px 'DM Mono',monospace;letter-spacing:.1em;cursor:pointer;transition:background .2s,border-color .2s}
+.hero-audio-toggle:hover{background:rgba(255,255,255,.16);border-color:#fff}
+@media(max-width:600px){.hero-background-video{object-position:65% center}.hero-shade{background:linear-gradient(90deg,rgba(5,7,7,.78),rgba(5,7,7,.35)),linear-gradient(0deg,rgba(5,7,7,.55),transparent 45%)}.hero-audio-toggle{right:7%;bottom:66px;padding:9px 11px;font-size:7px}}
