@@ -99,18 +99,18 @@ button,video{font:inherit}
 @media(max-width:600px){.hero-background-video{object-position:76% center}}
 
 
-/* Seamless black-to-showreel blend: video emerges after the hero copy */
+/* Keep the copy area completely black; reveal the showreel only after the text ends */
 .hero-background-video{
-  -webkit-mask-image:linear-gradient(90deg,transparent 18%,rgba(0,0,0,.08) 32%,rgba(0,0,0,.48) 48%,#000 68%);
-  mask-image:linear-gradient(90deg,transparent 18%,rgba(0,0,0,.08) 32%,rgba(0,0,0,.48) 48%,#000 68%);
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 46%,rgba(0,0,0,.06) 54%,rgba(0,0,0,.42) 66%,rgba(0,0,0,.82) 78%,#000 88%);
+  mask-image:linear-gradient(90deg,transparent 0%,transparent 46%,rgba(0,0,0,.06) 54%,rgba(0,0,0,.42) 66%,rgba(0,0,0,.82) 78%,#000 88%);
 }
 .hero-shade{
-  background:linear-gradient(90deg,#050606 0%,#050606 29%,rgba(5,6,6,.96) 39%,rgba(5,6,6,.72) 52%,rgba(5,6,6,.12) 78%,rgba(5,6,6,.2) 100%),linear-gradient(0deg,rgba(5,6,6,.48),transparent 36%,rgba(5,6,6,.18));
+  background:linear-gradient(90deg,#050606 0%,#050606 48%,rgba(5,6,6,.98) 55%,rgba(5,6,6,.78) 67%,rgba(5,6,6,.24) 84%,rgba(5,6,6,.12) 100%),linear-gradient(0deg,rgba(5,6,6,.42),transparent 38%,rgba(5,6,6,.12));
 }
 @media(max-width:600px){
   .hero-background-video{
-    -webkit-mask-image:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.08) 28%,rgba(0,0,0,.75) 56%,#000 78%);
-    mask-image:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.08) 28%,rgba(0,0,0,.75) 56%,#000 78%);
+    -webkit-mask-image:linear-gradient(180deg,transparent 0%,transparent 48%,rgba(0,0,0,.08) 58%,rgba(0,0,0,.65) 76%,#000 92%);
+    mask-image:linear-gradient(180deg,transparent 0%,transparent 48%,rgba(0,0,0,.08) 58%,rgba(0,0,0,.65) 76%,#000 92%);
   }
-  .hero-shade{background:linear-gradient(180deg,#050606 0%,rgba(5,6,6,.94) 34%,rgba(5,6,6,.5) 65%,rgba(5,6,6,.22) 100%)}
+  .hero-shade{background:linear-gradient(180deg,#050606 0%,#050606 47%,rgba(5,6,6,.96) 58%,rgba(5,6,6,.48) 78%,rgba(5,6,6,.2) 100%)}
 }
