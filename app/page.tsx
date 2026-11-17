@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
-import { ArrowDown, ArrowUpRight, Instagram, Play } from "lucide-react";
+import { useEffect, useState } from "react";
+import { ArrowDown, ArrowUpRight, Instagram, Play, Volume2, VolumeX } from "lucide-react";
 
 const videoSources: Record<string, string> = {
   "1st.mp4": "https://www.dropbox.com/scl/fi/neaf1p4qunaipq4vuv97y/1st.mp4?rlkey=9v83qi2mprwe1unrf6k3mhs5x&st=g2sd8j8p&raw=1",
@@ -63,6 +63,8 @@ function WorkSection({ id, number, title, note, items }: { id: string; number: s
 }
 
 export default function Home() {
+  const [showreelMuted, setShowreelMuted] = useState(true);
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -98,8 +100,17 @@ export default function Home() {
             <a className="hero-cta reveal" href="#personal">EXPLORE SELECTED WORK <ArrowDown size={15} /></a>
           </div>
           <div className="hero-media reveal">
-            <video src={videoSources["showcase-reel.mp4"]} autoPlay muted loop playsInline controls preload="metadata" />
-            <span className="hero-media-label"><Play size={12} fill="currentColor" /> SHOWREEL · 2026</span>
+            <div className="hero-video-wrap">
+              <video src={videoSources["showcase-reel.mp4"]} autoPlay muted={showreelMuted} loop playsInline controls preload="metadata" />
+              <span className="hero-media-label"><Play size={12} fill="currentColor" /> SHOWREEL · 2026</span>
+            </div>
+            <div className="hero-media-footer">
+              <span>SELECTED CUTS / 2026</span>
+              <button type="button" className="hero-audio-toggle" onClick={() => setShowreelMuted((muted) => !muted)} aria-label={showreelMuted ? "Unmute showreel" : "Mute showreel"}>
+                {showreelMuted ? <VolumeX size={14} /> : <Volume2 size={14} />}
+                {showreelMuted ? "UNMUTE AUDIO" : "MUTE AUDIO"}
+              </button>
+            </div>
           </div>
         </div>
         <div className="hero-bottom"><span>EDITING · STORYTELLING · VISUALS</span><span>SCROLL TO EXPLORE ↓</span></div>
