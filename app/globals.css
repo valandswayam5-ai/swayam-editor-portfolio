@@ -144,3 +144,15 @@ button,video{font:inherit}
     background:linear-gradient(180deg,#050606 0%,#050606 43%,rgba(5,6,6,.94) 53%,rgba(5,6,6,.38) 75%,rgba(5,6,6,.18) 100%);
   }
 }
+
+
+/* About profile and tools panel */
+.about-details-panel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin:0 4.5% 90px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.13);border-radius:22px;overflow:hidden}
+.about-detail{min-height:190px;padding:30px 32px;background:linear-gradient(135deg,#101a2c 0%,#102d55 58%,#124a91 100%)}
+.about-detail>span{font:8px 'DM Mono',monospace;letter-spacing:.15em;color:rgba(255,255,255,.68)}
+.about-detail h3{font-size:clamp(20px,2.2vw,30px);letter-spacing:-.055em;font-weight:600;margin:24px 0 9px;color:#fff}
+.about-detail p{max-width:430px;font-size:11px;line-height:1.8;color:rgba(255,255,255,.76);margin:0}
+.tools-detail{grid-column:span 2;background:linear-gradient(110deg,#10213b 0%,#123e75 55%,#1260b7 100%)}
+.tool-chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.tool-chips span{padding:10px 13px;border:1px solid rgba(255,255,255,.3);border-radius:999px;background:rgba(4,12,24,.2);font:9px 'DM Mono',monospace;letter-spacing:.025em;color:#fff}
+@media(max-width:600px){.about-details-panel{grid-template-columns:1fr;margin:0 0 55px;border-radius:16px}.about-detail{min-height:155px;padding:24px 21px}.tools-detail{grid-column:span 1}.about-detail h3{margin-top:19px;font-size:22px}.tool-chips{gap:7px}.tool-chips span{font-size:8px;padding:9px 10px}}
