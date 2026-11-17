@@ -87,6 +87,7 @@ export default function Home() {
   return (
     <main className="site-shell">
       <section className="hero" id="top">
+        <video className="hero-background-video" src={videoSources["showcase-reel.mp4"]} autoPlay muted={showreelMuted} loop playsInline preload="metadata" />
         <div className="hero-shade" />
         <nav className="nav">
           <a className="brand" href="#top">SWAYAM<span>®</span></a>
@@ -99,20 +100,11 @@ export default function Home() {
             <p className="reveal">I turn raw footage into visual stories<br />that move people and hold attention.</p>
             <a className="hero-cta reveal" href="#personal">EXPLORE SELECTED WORK <ArrowDown size={15} /></a>
           </div>
-          <div className="hero-media reveal">
-            <div className="hero-video-wrap">
-              <video src={videoSources["showcase-reel.mp4"]} autoPlay muted={showreelMuted} loop playsInline controls preload="metadata" />
-              <span className="hero-media-label"><Play size={12} fill="currentColor" /> SHOWREEL · 2026</span>
-            </div>
-            <div className="hero-media-footer">
-              <span>SELECTED CUTS / 2026</span>
-              <button type="button" className="hero-audio-toggle" onClick={() => setShowreelMuted((muted) => !muted)} aria-label={showreelMuted ? "Unmute showreel" : "Mute showreel"}>
-                {showreelMuted ? <VolumeX size={14} /> : <Volume2 size={14} />}
-                {showreelMuted ? "UNMUTE AUDIO" : "MUTE AUDIO"}
-              </button>
-            </div>
-          </div>
         </div>
+        <button type="button" className="hero-audio-toggle" onClick={() => setShowreelMuted((muted) => !muted)} aria-label={showreelMuted ? "Unmute showreel" : "Mute showreel"}>
+          {showreelMuted ? <VolumeX size={14} /> : <Volume2 size={14} />}
+          {showreelMuted ? "UNMUTE AUDIO" : "MUTE AUDIO"}
+        </button>
         <div className="hero-bottom"><span>EDITING · STORYTELLING · VISUALS</span><span>SCROLL TO EXPLORE ↓</span></div>
         <div className="hero-count">01 <i>—</i> 04</div>
       </section>
