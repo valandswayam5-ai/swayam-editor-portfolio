@@ -85,17 +85,22 @@ export default function Home() {
   return (
     <main className="site-shell">
       <section className="hero" id="top">
-        <video className="hero-video" src={videoSources["showcase-reel.mp4"]} autoPlay muted loop playsInline preload="metadata" />
         <div className="hero-shade" />
         <nav className="nav">
           <a className="brand" href="#top">SWAYAM<span>®</span></a>
           <div className="nav-links"><a href="#personal">WORK</a><a href="#about">ABOUT</a><a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer">INSTAGRAM ↗</a></div>
         </nav>
-        <div className="hero-copy">
-          <span className="hero-kicker reveal">INDEPENDENT VIDEO EDITOR · INDIA</span>
-          <h1 className="reveal">Stories<br /><em>in motion.</em></h1>
-          <p className="reveal">I turn raw footage into visual stories<br />that move people and hold attention.</p>
-          <a className="hero-cta reveal" href="#personal">EXPLORE SELECTED WORK <ArrowDown size={15} /></a>
+        <div className="hero-layout">
+          <div className="hero-copy">
+            <span className="hero-kicker reveal">INDEPENDENT VIDEO EDITOR · INDIA</span>
+            <h1 className="reveal">Stories<br /><em>in motion.</em></h1>
+            <p className="reveal">I turn raw footage into visual stories<br />that move people and hold attention.</p>
+            <a className="hero-cta reveal" href="#personal">EXPLORE SELECTED WORK <ArrowDown size={15} /></a>
+          </div>
+          <div className="hero-media reveal">
+            <video src={videoSources["showcase-reel.mp4"]} autoPlay muted loop playsInline controls preload="metadata" />
+            <span className="hero-media-label"><Play size={12} fill="currentColor" /> SHOWREEL · 2026</span>
+          </div>
         </div>
         <div className="hero-bottom"><span>EDITING · STORYTELLING · VISUALS</span><span>SCROLL TO EXPLORE ↓</span></div>
         <div className="hero-count">01 <i>—</i> 04</div>
