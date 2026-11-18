@@ -346,3 +346,16 @@ body{font-family:Manrope,Arial,sans-serif;-webkit-font-smoothing:antialiased;tex
 .software-app:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.6);background:rgba(28,28,83,.9)}
 .software-app img{display:block;width:30px;height:30px;object-fit:contain}
 .software-app span{font:8px/1.35 'DM Mono',monospace;letter-spacing:.015em;color:#f4efff}
+
+
+/* Match Technical Skills logo cards to the site's dark cinematic navy palette */
+.about-reference-section .software-app{
+  background:linear-gradient(145deg,rgba(13,22,43,.96),rgba(23,34,61,.96));
+  border:1px solid rgba(115,174,255,.22);
+  box-shadow:0 8px 22px rgba(4,10,25,.24),inset 0 1px 0 rgba(210,229,255,.05);
+}
+.about-reference-section .software-app:hover{
+  background:linear-gradient(145deg,#172746,#202c4b);
+  border-color:rgba(111,190,235,.55);
+  box-shadow:0 10px 26px rgba(25,91,150,.16),0 0 18px rgba(119,105,255,.12);
+}
