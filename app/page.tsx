@@ -160,7 +160,7 @@ export default function Home() {
             </div>
             <div className="reference-info-block">
               <h3>Interest</h3>
-              <div className="reference-inline-list"><span>Cinematic edits</span><i /><span>Music & rhythm</span><i /><span>Visual storytelling</span></div>
+              <div className="reference-inline-list"><span>AI</span><i /><span>Filmmaking</span><i /><span>Technology</span></div>
             </div>
           </div>
           <div className="reference-column">
@@ -170,7 +170,7 @@ export default function Home() {
             </div>
             <div className="reference-info-block">
               <h3>Skill set</h3>
-              <div className="reference-split-list"><span>Video editing</span><span>Storytelling</span><span>Sound design</span><span>Transitions</span><span>Short-form content</span><span>Color & pacing</span></div>
+              <div className="reference-split-list"><span>Video editing</span><span>Storytelling</span><span>Web development</span><span>App development</span><span>AI-assisted creativity</span><span>Content creation</span></div>
             </div>
             <div className="reference-info-block">
               <h3>Language</h3>
