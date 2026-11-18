@@ -137,6 +137,7 @@ export default function Home() {
             </div>
             <div className="about-reference-contact">
               <h3>Contact</h3>
+              <a href="mailto:visionswym@gmail.com"><span className="contact-symbol">@</span><span>visionswym@gmail.com</span><ArrowUpRight size={14} /></a>
               <a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer"><span className="contact-symbol"><Instagram size={17} /></span><span>@vision.swym</span><ArrowUpRight size={14} /></a>
             </div>
           </div>
@@ -177,6 +178,31 @@ export default function Home() {
               <div className="reference-inline-list"><span>Gujarati</span><i /><span>Hindi</span><i /><span>English</span></div>
             </div>
           </div>
+        </div>
+        <div className="inquiry-section reveal" id="inquiry">
+          <div className="inquiry-heading">
+            <span>HAVE A PROJECT IN MIND?</span>
+            <h3>Let’s make something<br /><em>worth watching.</em></h3>
+            <p>Tell me a little about your project and I’ll get back to you by email.</p>
+          </div>
+          <form className="inquiry-form" onSubmit={(event) => {
+            event.preventDefault();
+            const data = new FormData(event.currentTarget);
+            const name = String(data.get("name") || "");
+            const email = String(data.get("email") || "");
+            const project = String(data.get("project") || "");
+            const message = String(data.get("message") || "");
+            const subject = encodeURIComponent("Project inquiry — " + project);
+            const body = encodeURIComponent("Name: " + name + "\\nEmail: " + email + "\\nProject type: " + project + "\\n\\nProject details:\\n" + message);
+            window.location.href = "mailto:visionswym@gmail.com?subject=" + subject + "&body=" + body;
+          }}>
+            <label>Your name<input name="name" type="text" placeholder="Enter your name" required /></label>
+            <label>Your email<input name="email" type="email" placeholder="you@example.com" required /></label>
+            <label>What do you need?<select name="project" defaultValue="" required><option value="" disabled>Select project type</option><option>Video editing</option><option>Reels / short-form content</option><option>Event or promotional video</option><option>Web development</option><option>App development</option><option>Other</option></select></label>
+            <label className="inquiry-message">Project details<textarea name="message" rows={5} placeholder="Share your idea, goals, timeline or any useful details..." required /></label>
+            <button type="submit">SEND INQUIRY <ArrowUpRight size={15} /></button>
+            <p className="inquiry-note">Submitting opens your email app with the inquiry filled in. You’ll send it from there.</p>
+          </form>
         </div>
         <div className="about-bottom-line"><span>CURIOUS BY NATURE. CREATIVE BY CHOICE.</span><span>ONE STEP AT A TIME ↗</span></div>
         <footer className="footer"><a className="brand" href="#top">SWAYAM<span>®</span></a><span>VIDEO EDITOR · VISUAL STORYTELLER</span><a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer"><Instagram size={15} /> @VISION.SWYM <ArrowUpRight size={14} /></a><span>© 2026 · ALL RIGHTS RESERVED</span></footer>
