@@ -92,7 +92,7 @@ export default function Home() {
         <div className="hero-shade" />
         <nav className="nav">
           <a className="brand" href="#top">SWAYAM<span>®</span></a>
-          <div className="nav-links"><a href="#personal">WORK</a><a href="#about">ABOUT</a><a href="https://instagram.com/vision.swayam" target="_blank" rel="noreferrer">INSTAGRAM ↗</a></div>
+          <div className="nav-links"><a href="#personal">WORK</a><a href="#about">ABOUT</a><a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer">INSTAGRAM ↗</a></div>
         </nav>
         <div className="hero-layout">
           <div className="hero-copy">
@@ -141,7 +141,7 @@ export default function Home() {
             <p>I’m Swayam Valand, an independent video editor from India. I enjoy turning raw footage into engaging visual stories, using pacing, music, transitions and detail to shape the way a video feels.</p>
             <p>This portfolio brings together my personal edits and client projects. My work explores cinematic-style edits, short-form social content, event highlights, promotional videos and model reels. Every personal edit is a chance to experiment, improve my craft and develop my own editing style.</p>
             <p>I’m continuously learning, refining my workflow and looking for new creative challenges. My goal is simple: make every edit feel intentional and leave a lasting impression.</p>
-            <div className="about-contact-row"><span>FOLLOW MY EDITS</span><a href="https://instagram.com/vision.swayam" target="_blank" rel="noreferrer">@VISION.SWAYAM <ArrowUpRight size={14} /></a></div>
+            <div className="about-contact-row"><span>FOLLOW MY EDITS</span><a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer">@VISION.SWYM <ArrowUpRight size={14} /></a></div>
           </div>
         </div>
         <div className="about-info-panel reveal">
@@ -156,7 +156,7 @@ export default function Home() {
           </div>
         </div>
         <div className="about-bottom-line"><span>CURIOUS BY NATURE. CREATIVE BY CHOICE.</span><span>ONE STEP AT A TIME ↗</span></div>
-        <footer className="footer"><a className="brand" href="#top">SWAYAM<span>®</span></a><span>VIDEO EDITOR · VISUAL STORYTELLER</span><a href="https://instagram.com/vision.swayam" target="_blank" rel="noreferrer"><Instagram size={15} /> @VISION.SWAYAM <ArrowUpRight size={14} /></a><span>© 2026 · ALL RIGHTS RESERVED</span></footer>
+        <footer className="footer"><a className="brand" href="#top">SWAYAM<span>®</span></a><span>VIDEO EDITOR · VISUAL STORYTELLER</span><a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer"><Instagram size={15} /> @VISION.SWYM <ArrowUpRight size={14} /></a><span>© 2026 · ALL RIGHTS RESERVED</span></footer>
       </section>
     </main>
   );
