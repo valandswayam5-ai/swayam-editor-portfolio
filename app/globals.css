@@ -338,3 +338,11 @@ body{font-family:Manrope,Arial,sans-serif;-webkit-font-smoothing:antialiased;tex
 .inquiry-note{grid-column:span 2;margin:0;color:#aaa5c8;font-size:9px;line-height:1.6}
 @media(max-width:760px){.inquiry-section{grid-template-columns:1fr;gap:22px;padding:30px 7%;border-radius:20px}.inquiry-heading h3{font-size:42px}}
 @media(max-width:480px){.inquiry-form{grid-template-columns:1fr}.inquiry-message,.inquiry-note{grid-column:span 1}.inquiry-form button{width:100%;justify-content:center}}
+
+
+/* App skill badges use the products' recognizable brand marks */
+.software-icons{align-items:stretch;gap:16px}
+.software-app{width:76px;min-height:86px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;padding:10px 6px;border:1px solid rgba(255,255,255,.2);border-radius:12px;background:rgba(16,16,63,.72);color:#fff;text-align:center;transition:transform .2s,border-color .2s,background .2s}
+.software-app:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.6);background:rgba(28,28,83,.9)}
+.software-app img{display:block;width:30px;height:30px;object-fit:contain}
+.software-app span{font:8px/1.35 'DM Mono',monospace;letter-spacing:.015em;color:#f4efff}
