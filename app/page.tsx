@@ -34,17 +34,11 @@ const clients = [
 
 type Item = typeof personal[number];
 
-function pauseOtherVideos(current: HTMLVideoElement) {
-  document.querySelectorAll<HTMLVideoElement>(".portfolio-video").forEach((video) => {
-    if (video !== current) video.pause();
-  });
-}
-
 function ProjectCard({ item, index }: { item: Item; index: number }) {
   return (
     <article className="project-card reveal" style={{ ["--delay" as string]: `${index * 70}ms` }}>
       <div className="video-frame">
-        <video className="portfolio-video" src={videoSources[item.file]} controls playsInline preload="metadata" onPlay={(event) => pauseOtherVideos(event.currentTarget)} />
+        <video className="portfolio-video" src={videoSources[item.file]} controls playsInline preload="metadata" />
         <span className="card-index">{item.number}</span>
       </div>
       <div className="project-meta">
@@ -62,7 +56,7 @@ function WorkSection({ id, number, title, note, items }: { id: string; number: s
         <span className="section-number">{number} / SELECTED WORK</span>
         <h2>{title}<span>.</span></h2>
         <p>{note}</p>
-        <p className="video-viewing-hint">For the best experience, watch in fullscreen. Only one video plays at a time.</p>
+        <p className="video-viewing-hint">For the best viewing experience, switch to fullscreen.</p>
       </div>
       <div className="project-grid">{items.map((item, index) => <ProjectCard key={item.file} item={item} index={index} />)}</div>
     </section>
@@ -98,7 +92,7 @@ export default function Home() {
         <div className="hero-shade" />
         <nav className="nav">
           <a className="brand" href="#top">SWAYAM<span>®</span></a>
-          <div className="nav-links"><a href="#personal">WORK</a><a href="#about">ABOUT</a><a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer">INSTAGRAM ↗</a></div>
+          <div className="nav-links"><a href="#personal">WORK</a><a href="#about">ABOUT</a><a href="https://instagram.com/vision.swayam" target="_blank" rel="noreferrer">INSTAGRAM ↗</a></div>
         </nav>
         <div className="hero-layout">
           <div className="hero-copy">
@@ -128,7 +122,7 @@ export default function Home() {
       <section className="showreel-section" id="showreel">
         <div className="section-number reveal">04 / THE REEL</div>
         <div className="showreel-heading reveal"><h2>A little<br /><em>of everything.</em></h2><p>A collection of moments, details and stories — cut together in one place.</p></div>
-        <div className="showreel-player reveal"><video className="portfolio-video" src={videoSources["showcase-reel.mp4"]} controls playsInline preload="metadata" onPlay={(event) => pauseOtherVideos(event.currentTarget)} /><span><Play size={13} fill="currentColor" /> SHOWREEL · 2026</span></div>
+        <div className="showreel-player reveal"><video className="portfolio-video" src={videoSources["showcase-reel.mp4"]} controls playsInline preload="metadata" /><span><Play size={13} fill="currentColor" /> SHOWREEL · 2026</span></div>
       </section>
 
       <section className="about-section about-profile-section" id="about">
@@ -142,26 +136,27 @@ export default function Home() {
             <span className="portrait-index">PROFILE / 01</span>
           </div>
           <div className="about-profile-copy reveal">
-            <span className="about-eyebrow">HELLO, I’M SWAYAM</span>
-            <h3>Learning. Creating.<br /><em>Building what’s next.</em></h3>
-            <p>I’m a 17-year-old creator from India, currently studying Class 12 Commerce under GSEB. I’m exploring the intersection of video, design and technology—building my skills through hands-on projects and continuous experimentation.</p>
-            <p>My focus is creating thoughtful visual content, learning how digital products work, and turning ideas into real things. I’m still growing, and that’s part of the process.</p>
-            <div className="about-contact-row"><span>FIND ME ONLINE</span><a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer">@VISION.SWYM <ArrowUpRight size={14} /></a></div>
+            <span className="about-eyebrow">THE EDITOR BEHIND THE FRAME</span>
+            <h3>Swayam Valand.<br /><em>Video editor & visual storyteller.</em></h3>
+            <p>I’m Swayam Valand, an independent video editor from India. I enjoy turning raw footage into engaging visual stories, using pacing, music, transitions and detail to shape the way a video feels.</p>
+            <p>This portfolio brings together my personal edits and client projects. My work explores cinematic-style edits, short-form social content, event highlights, promotional videos and model reels. Every personal edit is a chance to experiment, improve my craft and develop my own editing style.</p>
+            <p>I’m continuously learning, refining my workflow and looking for new creative challenges. My goal is simple: make every edit feel intentional and leave a lasting impression.</p>
+            <div className="about-contact-row"><span>FOLLOW MY EDITS</span><a href="https://instagram.com/vision.swayam" target="_blank" rel="noreferrer">@VISION.SWAYAM <ArrowUpRight size={14} /></a></div>
           </div>
         </div>
         <div className="about-info-panel reveal">
           <div className="about-panel-heading"><span>THE DETAILS</span><p>A snapshot of what I’m learning, creating and exploring.</p></div>
           <div className="about-info-grid">
-            <div className="about-info-card"><span>01 / SKILLS</span><h3>What I work on</h3><div className="about-tags"><i>Video Editing</i><i>Web Development</i><i>Automation</i><i>Software Development</i><i>App Development</i></div></div>
+            <div className="about-info-card"><span>01 / SKILLS</span><h3>What I work on</h3><div className="about-tags"><i>Video Editing</i><i>Storytelling</i><i>Sound Design</i><i>Transitions</i><i>Short-form Content</i><i>Color & Pacing</i></div></div>
             <div className="about-info-card"><span>02 / LANGUAGES</span><h3>How I communicate</h3><div className="about-tags"><i>Hindi</i><i>English</i><i>Gujarati</i></div></div>
             <div className="about-info-card"><span>03 / SOFT SKILLS</span><h3>How I approach things</h3><div className="about-tags"><i>Creativity</i><i>Problem-solving</i><i>Curiosity</i><i>Fast learning</i><i>Communication</i></div></div>
-            <div className="about-info-card"><span>04 / INTERESTS</span><h3>Always exploring</h3><div className="about-tags"><i>Filmmaking</i><i>AI</i><i>Technology</i></div></div>
+            <div className="about-info-card"><span>04 / INTERESTS</span><h3>Always exploring</h3><div className="about-tags"><i>Cinematic Edits</i><i>Reels</i><i>Music & Rhythm</i><i>Visual Storytelling</i></div></div>
             <div className="about-info-card about-tools-card"><span>05 / TOOLS & APPS</span><h3>My current toolkit</h3><div className="about-tags"><i>Adobe Premiere Pro</i><i>Canva</i><i>CapCut</i><i>ChatGPT</i><i>GitHub</i><i>Vercel</i><i>Dropbox</i></div></div>
             <div className="about-info-card"><span>06 / EDUCATION</span><h3>Currently studying</h3><p>Class 12 Commerce · Gujarat Secondary and Higher Secondary Education Board (GSEB)</p></div>
           </div>
         </div>
         <div className="about-bottom-line"><span>CURIOUS BY NATURE. CREATIVE BY CHOICE.</span><span>ONE STEP AT A TIME ↗</span></div>
-        <footer className="footer"><a className="brand" href="#top">SWAYAM<span>®</span></a><span>INDEPENDENT CREATOR · INDIA</span><a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer"><Instagram size={15} /> @VISION.SWYM <ArrowUpRight size={14} /></a><span>© 2026 · ALL RIGHTS RESERVED</span></footer>
+        <footer className="footer"><a className="brand" href="#top">SWAYAM<span>®</span></a><span>INDEPENDENT CREATOR · INDIA</span><a href="https://instagram.com/vision.swayam" target="_blank" rel="noreferrer"><Instagram size={15} /> @VISION.SWAYAM <ArrowUpRight size={14} /></a><span>© 2026 · ALL RIGHTS RESERVED</span></footer>
       </section>
     </main>
   );
