@@ -34,11 +34,17 @@ const clients = [
 
 type Item = typeof personal[number];
 
+function pauseOtherVideos(current: HTMLVideoElement) {
+  document.querySelectorAll<HTMLVideoElement>(".portfolio-video").forEach((video) => {
+    if (video !== current) video.pause();
+  });
+}
+
 function ProjectCard({ item, index }: { item: Item; index: number }) {
   return (
     <article className="project-card reveal" style={{ ["--delay" as string]: `${index * 70}ms` }}>
       <div className="video-frame">
-        <video src={videoSources[item.file]} controls playsInline preload="metadata" />
+        <video className="portfolio-video" src={videoSources[item.file]} controls playsInline preload="metadata" onPlay={(event) => pauseOtherVideos(event.currentTarget)} />
         <span className="card-index">{item.number}</span>
       </div>
       <div className="project-meta">
@@ -56,6 +62,7 @@ function WorkSection({ id, number, title, note, items }: { id: string; number: s
         <span className="section-number">{number} / SELECTED WORK</span>
         <h2>{title}<span>.</span></h2>
         <p>{note}</p>
+        <p className="video-viewing-hint">For the best experience, watch in fullscreen. Only one video plays at a time.</p>
       </div>
       <div className="project-grid">{items.map((item, index) => <ProjectCard key={item.file} item={item} index={index} />)}</div>
     </section>
@@ -121,7 +128,7 @@ export default function Home() {
       <section className="showreel-section" id="showreel">
         <div className="section-number reveal">04 / THE REEL</div>
         <div className="showreel-heading reveal"><h2>A little<br /><em>of everything.</em></h2><p>A collection of moments, details and stories — cut together in one place.</p></div>
-        <div className="showreel-player reveal"><video src={videoSources["showcase-reel.mp4"]} controls playsInline preload="metadata" /><span><Play size={13} fill="currentColor" /> SHOWREEL · 2026</span></div>
+        <div className="showreel-player reveal"><video className="portfolio-video" src={videoSources["showcase-reel.mp4"]} controls playsInline preload="metadata" onPlay={(event) => pauseOtherVideos(event.currentTarget)} /><span><Play size={13} fill="currentColor" /> SHOWREEL · 2026</span></div>
       </section>
 
       <section className="about-section about-profile-section" id="about">
