@@ -157,7 +157,7 @@ export default function Home() {
             </div>
             <div className="reference-info-block">
               <h3>Technical skill</h3>
-              <div className="software-icons"><span className="software-premiere">Pr</span><span className="software-canva">Canva</span><span className="software-capcut">CapCut</span></div>
+              <div className="software-icons"><span className="software-premiere">Pr</span><span className="software-canva">Canva</span><span className="software-capcut">CapCut</span><span className="software-chatgpt">ChatGPT</span><span className="software-github">GitHub</span><span className="software-vercel">Vercel</span><span className="software-antigravity">Antigravity</span></div>
             </div>
             <div className="reference-info-block">
               <h3>Interest</h3>
