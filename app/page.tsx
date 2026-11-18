@@ -157,7 +157,15 @@ export default function Home() {
             </div>
             <div className="reference-info-block">
               <h3>Technical skill</h3>
-              <div className="software-icons"><span className="software-premiere">Pr</span><span className="software-canva">Canva</span><span className="software-capcut">CapCut</span><span className="software-chatgpt">ChatGPT</span><span className="software-github">GitHub</span><span className="software-vercel">Vercel</span><span className="software-antigravity">Antigravity</span></div>
+              <div className="software-icons">
+                <a className="software-app" href="https://www.adobe.com/products/premiere.html" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/adobepremierepro/9999FF" alt="" loading="lazy" /><span>Premiere Pro</span></a>
+                <a className="software-app" href="https://www.canva.com/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/canva/00C4CC" alt="" loading="lazy" /><span>Canva</span></a>
+                <a className="software-app" href="https://www.capcut.com/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/capcut/FFFFFF" alt="" loading="lazy" /><span>CapCut</span></a>
+                <a className="software-app" href="https://chatgpt.com/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/openai/FFFFFF" alt="" loading="lazy" /><span>ChatGPT</span></a>
+                <a className="software-app" href="https://github.com/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/github/FFFFFF" alt="" loading="lazy" /><span>GitHub</span></a>
+                <a className="software-app" href="https://vercel.com/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/vercel/FFFFFF" alt="" loading="lazy" /><span>Vercel</span></a>
+                <a className="software-app" href="https://antigravity.google/" target="_blank" rel="noreferrer"><img src="https://antigravity.google/assets/image/brand/antigravity-icon__full-color.svg" alt="" loading="lazy" /><span>Antigravity</span></a>
+              </div>
             </div>
             <div className="reference-info-block">
               <h3>Interest</h3>
