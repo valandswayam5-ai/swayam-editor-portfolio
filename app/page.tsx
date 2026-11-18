@@ -129,10 +129,8 @@ export default function Home() {
         <div className="about-top"><span className="section-number">05 / THE PERSON BEHIND THE WORK</span><span>SWAYAM®</span></div>
         <div className="about-title-wrap reveal"><span className="about-title-pill">A LITTLE ABOUT ME</span><h2>More than<br /><em>the edit.</em></h2><p>A curious mind, a creative process, and a love for making things move.</p></div>
         <div className="about-profile-grid">
-          <div className="about-portrait-placeholder reveal" aria-label="Portrait photo will be added later">
-            <div className="portrait-orbit portrait-orbit-one" /><div className="portrait-orbit portrait-orbit-two" />
-            <span className="portrait-monogram">S<span>.</span></span>
-            <span className="portrait-placeholder-label">YOUR PORTRAIT<br />WILL LIVE HERE</span>
+          <div className="about-portrait-placeholder reveal" aria-label="Portrait of Swayam Valand">
+            <img className="about-portrait-image" src="https://www.dropbox.com/scl/fi/n642s7izvu6dub3nfrpzs/swayam.png?rlkey=hczeyx9i8ugorutlcqnavowl0&raw=1" alt="Swayam Valand" loading="lazy" />
             <span className="portrait-index">PROFILE / 01</span>
           </div>
           <div className="about-profile-copy reveal">
