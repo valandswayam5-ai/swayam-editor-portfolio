@@ -127,12 +127,8 @@ export default function Home() {
 
       <section className="about-section about-profile-section" id="about">
         <div className="about-top"><span className="section-number">05 / THE PERSON BEHIND THE WORK</span><span>SWAYAM®</span></div>
-        <div className="about-title-wrap reveal"><span className="about-title-pill">A LITTLE ABOUT ME</span><h2>More than<br /><em>the edit.</em></h2><p>A curious mind, a creative process, and a love for making things move.</p></div>
+        <div className="about-title-wrap about-title-left reveal"><span className="about-title-pill">05 / ABOUT ME</span><h2>About <em>me.</em></h2><p>The person, process and perspective behind every edit.</p></div>
         <div className="about-profile-grid">
-          <div className="about-portrait-placeholder reveal" aria-label="Portrait of Swayam Valand">
-            <img className="about-portrait-image" src="https://www.dropbox.com/scl/fi/n642s7izvu6dub3nfrpzs/swayam.png?rlkey=hczeyx9i8ugorutlcqnavowl0&raw=1" alt="Swayam Valand" loading="lazy" />
-            <span className="portrait-index">PROFILE / 01</span>
-          </div>
           <div className="about-profile-copy reveal">
             <span className="about-eyebrow">THE EDITOR BEHIND THE FRAME</span>
             <h3>Swayam Valand.<br /><em>Video editor & visual storyteller.</em></h3>
@@ -140,6 +136,10 @@ export default function Home() {
             <p>This portfolio brings together my personal edits and client projects. My work explores cinematic-style edits, short-form social content, event highlights, promotional videos and model reels. Every personal edit is a chance to experiment, improve my craft and develop my own editing style.</p>
             <p>I’m continuously learning, refining my workflow and looking for new creative challenges. My goal is simple: make every edit feel intentional and leave a lasting impression.</p>
             <div className="about-contact-row"><span>FOLLOW MY EDITS</span><a href="https://instagram.com/vision.swym" target="_blank" rel="noreferrer">@VISION.SWYM <ArrowUpRight size={14} /></a></div>
+          </div>
+          <div className="about-portrait-placeholder reveal" aria-label="Portrait of Swayam Valand">
+            <img className="about-portrait-image" src="https://www.dropbox.com/scl/fi/n642s7izvu6dub3nfrpzs/swayam.png?rlkey=hczeyx9i8ugorutlcqnavowl0&raw=1" alt="Swayam Valand" loading="lazy" />
+            <span className="portrait-index">SWAYAM VALAND · VIDEO EDITOR</span>
           </div>
         </div>
         <div className="about-info-panel reveal">
