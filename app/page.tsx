@@ -160,7 +160,6 @@ export default function Home() {
               <div className="software-icons">
                 <a className="software-app" href="https://www.adobe.com/products/premiere.html" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg" alt="" loading="lazy" /><span>Premiere Pro</span></a>
                 <a className="software-app" href="https://www.canva.com/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/canva.svg" alt="" loading="lazy" /><span>Canva</span></a>
-                <a className="software-app" href="https://www.capcut.com/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/capcut.svg" alt="" loading="lazy" /><span>CapCut</span></a>
                 <a className="software-app" href="https://chatgpt.com/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/openai.svg" alt="" loading="lazy" /><span>ChatGPT</span></a>
                 <a className="software-app" href="https://github.com/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/github/FFFFFF" alt="" loading="lazy" /><span>GitHub</span></a>
                 <a className="software-app" href="https://vercel.com/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/vercel/FFFFFF" alt="" loading="lazy" /><span>Vercel</span></a>
