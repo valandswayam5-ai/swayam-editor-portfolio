@@ -96,7 +96,7 @@ export default function Home() {
         </nav>
         <div className="hero-layout">
           <div className="hero-copy">
-            <span className="hero-kicker reveal">INDEPENDENT VIDEO EDITOR · INDIA</span>
+            <span className="hero-kicker reveal">SWAYAM VALAND · VIDEO EDITOR · INDIA</span>
             <h1 className="reveal">Stories<br /><em>in motion.</em></h1>
             <p className="reveal">I turn raw footage into visual stories<br />that move people and hold attention.</p>
             <a className="hero-cta reveal" href="#personal">EXPLORE SELECTED WORK <ArrowDown size={15} /></a>
@@ -156,7 +156,7 @@ export default function Home() {
           </div>
         </div>
         <div className="about-bottom-line"><span>CURIOUS BY NATURE. CREATIVE BY CHOICE.</span><span>ONE STEP AT A TIME ↗</span></div>
-        <footer className="footer"><a className="brand" href="#top">SWAYAM<span>®</span></a><span>INDEPENDENT CREATOR · INDIA</span><a href="https://instagram.com/vision.swayam" target="_blank" rel="noreferrer"><Instagram size={15} /> @VISION.SWAYAM <ArrowUpRight size={14} /></a><span>© 2026 · ALL RIGHTS RESERVED</span></footer>
+        <footer className="footer"><a className="brand" href="#top">SWAYAM<span>®</span></a><span>VIDEO EDITOR · VISUAL STORYTELLER</span><a href="https://instagram.com/vision.swayam" target="_blank" rel="noreferrer"><Instagram size={15} /> @VISION.SWAYAM <ArrowUpRight size={14} /></a><span>© 2026 · ALL RIGHTS RESERVED</span></footer>
       </section>
     </main>
   );
