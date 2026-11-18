@@ -229,3 +229,87 @@ body{font-family:Manrope,Arial,sans-serif;-webkit-font-smoothing:antialiased;tex
 .about-portrait-placeholder{isolation:isolate}
 .about-portrait-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;z-index:0}
 .about-portrait-placeholder .portrait-index{z-index:1;padding:8px 10px;border:1px solid rgba(214,226,255,.22);border-radius:4px;background:rgba(5,9,18,.58);backdrop-filter:blur(8px)}
+
+
+/* Reference-inspired About Me layout */
+.about-reference-section{
+  position:relative;isolation:isolate;overflow:hidden;
+  padding:48px 0 26px;
+  background:radial-gradient(ellipse at 90% 12%,rgba(48,157,215,.13),transparent 28%),#17182d;
+}
+.about-reference-section:before,.about-reference-section:after{
+  content:"";position:absolute;z-index:-1;pointer-events:none;border:1px solid rgba(163,125,255,.42);
+  width:520px;height:520px;border-radius:48% 52% 50% 50%;right:-180px;top:-65px;transform:rotate(25deg);
+}
+.about-reference-section:after{width:420px;height:420px;right:-120px;top:10px;transform:rotate(-22deg);border-color:rgba(91,207,239,.25)}
+.about-reference-section .about-top{padding:0 7%;color:#b9b8d2}
+.about-reference-top{display:grid;grid-template-columns:1.08fr .92fr;gap:6%;align-items:center;padding:76px 8% 86px;min-height:540px}
+.about-reference-title{
+  width:min(100%,430px);margin-left:-9vw;padding:15px 34px 17px 9vw;
+  border-radius:0 80px 80px 0;background:linear-gradient(100deg,#6f42d6,#9b75f3 78%,rgba(155,117,243,.2));
+  box-shadow:0 0 42px rgba(140,94,255,.25);color:#fff;
+}
+.about-reference-title span{font-size:clamp(32px,4vw,48px);font-weight:800;letter-spacing:-.055em}
+.about-reference-copy{max-width:520px;margin:42px 0 0;color:#f1efff;font-size:12px;line-height:1.9}
+.about-reference-copy p{margin:0 0 2px}
+.about-reference-copy .about-objective{margin-top:20px;color:#d1cbed}
+.about-objective span{color:#b9a5ff}
+.about-reference-contact{margin-top:54px}
+.about-reference-contact h3,.reference-info-block h3{font-size:clamp(20px,2.1vw,27px);font-weight:800;font-style:italic;letter-spacing:-.055em;margin:0 0 20px;color:#fff}
+.about-reference-contact a{display:inline-flex;align-items:center;gap:11px;color:#f4f1ff;font-size:12px;font-weight:650}
+.contact-symbol{display:grid;place-items:center;width:25px;height:25px;border-radius:50%;background:#c9baff;color:#21183e}
+.about-reference-portrait{position:relative;display:grid;place-items:center;min-height:430px}
+.portrait-photo-frame{position:relative;width:min(100%,300px);aspect-ratio: .76;overflow:hidden;border-radius:38% 38% 42% 42% / 30% 30% 36% 36%;background:#52c4d7;box-shadow:0 22px 60px rgba(0,0,0,.26);z-index:1}
+.portrait-photo-frame img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 30%}
+.about-reference-portrait .portrait-orbit{width:340px;height:390px;border-radius:44%;border:1px solid rgba(168,124,255,.65);transform:rotate(-17deg);z-index:0}
+.about-reference-portrait .portrait-orbit-a{width:355px;height:410px;transform:rotate(18deg)}
+.about-reference-portrait .portrait-orbit-b{width:410px;height:320px;transform:rotate(48deg);border-color:rgba(100,205,235,.35)}
+.about-reference-panel{
+  position:relative;width:92%;margin:0 auto 75px;padding:58px 8% 64px;
+  display:grid;grid-template-columns:1fr 1fr;gap:7%;
+  border-radius:0 150px 150px 0;
+  background:linear-gradient(112deg,#6843c8 0%,#7955d8 52%,#8a6be9 100%);
+  box-shadow:0 0 55px rgba(132,91,232,.22),inset 0 1px rgba(255,255,255,.15);
+}
+.reference-column{display:flex;flex-direction:column;justify-content:space-between;gap:38px}
+.reference-info-block h3{margin-bottom:22px}
+.reference-info-block p,.reference-inline-list,.reference-split-list{font-size:11px;line-height:1.8;color:#f4efff}
+.reference-heading-row{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.education-date{padding:8px 15px;border:1px solid rgba(255,255,255,.65);border-radius:30px;font:10px 'DM Mono',monospace;color:#fff}
+.software-icons{display:flex;gap:14px;flex-wrap:wrap}
+.software-icons span{width:54px;height:54px;display:grid;place-items:center;border-radius:10px;background:#10103f;color:#c9c5ff;font-size:19px;font-weight:800;box-shadow:0 5px 15px rgba(24,12,69,.2)}
+.software-icons .software-premiere{background:#21134d;color:#b6a3ff}
+.software-icons .software-canva{background:#073f59;color:#8ee9f0;font-size:12px}
+.software-icons .software-capcut{background:#171717;color:#fff;font-size:11px}
+.reference-inline-list{display:flex;align-items:center;gap:17px;flex-wrap:wrap}
+.reference-inline-list i{height:18px;width:1px;background:rgba(255,255,255,.65)}
+.reference-split-list{display:grid;grid-template-columns:1fr 1fr;column-gap:26px;row-gap:10px;max-width:430px}
+.reference-split-list span:nth-child(even){border-left:1px solid rgba(255,255,255,.6);padding-left:26px}
+.about-reference-section .about-bottom-line{padding:0 7% 28px;color:#a9a4c9}
+.about-reference-section .footer{margin:0 7%;border-color:rgba(255,255,255,.18)}
+@media(max-width:760px){
+ .about-reference-top{grid-template-columns:1fr;gap:35px;padding:65px 8% 60px}
+ .about-reference-title{margin-left:-9vw}
+ .about-reference-copy{margin-top:30px}
+ .about-reference-contact{margin-top:36px}
+ .about-reference-portrait{min-height:370px}
+ .about-reference-panel{width:100%;padding:42px 8%;border-radius:0 90px 90px 0;gap:30px}
+ .about-reference-portrait .portrait-orbit-a{width:310px;height:350px}
+ .about-reference-portrait .portrait-orbit-b{width:350px;height:280px}
+}
+@media(max-width:540px){
+ .about-reference-section{padding-top:30px}
+ .about-reference-top{padding:55px 7% 48px}
+ .about-reference-title span{font-size:34px}
+ .about-reference-copy{font-size:11px}
+ .about-reference-portrait{min-height:340px}
+ .portrait-photo-frame{width:min(78%,280px)}
+ .about-reference-portrait .portrait-orbit-a{width:285px;height:325px}
+ .about-reference-portrait .portrait-orbit-b{width:320px;height:250px}
+ .about-reference-panel{grid-template-columns:1fr;padding:38px 8%;gap:36px;border-radius:0 70px 70px 0;margin-bottom:55px}
+ .reference-column{gap:34px}
+ .reference-info-block h3{font-size:22px;margin-bottom:16px}
+ .reference-split-list{column-gap:16px}
+ .reference-split-list span:nth-child(even){padding-left:16px}
+ .about-reference-section .footer{margin:0 6%}
+}
