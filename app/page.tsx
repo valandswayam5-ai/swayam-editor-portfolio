@@ -158,10 +158,10 @@ export default function Home() {
             <div className="reference-info-block">
               <h3>Technical skill</h3>
               <div className="software-icons">
-                <a className="software-app" href="https://www.adobe.com/products/premiere.html" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/adobepremierepro/9999FF" alt="" loading="lazy" /><span>Premiere Pro</span></a>
-                <a className="software-app" href="https://www.canva.com/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/canva/00C4CC" alt="" loading="lazy" /><span>Canva</span></a>
-                <a className="software-app" href="https://www.capcut.com/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/capcut/FFFFFF" alt="" loading="lazy" /><span>CapCut</span></a>
-                <a className="software-app" href="https://chatgpt.com/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/openai/FFFFFF" alt="" loading="lazy" /><span>ChatGPT</span></a>
+                <a className="software-app" href="https://www.adobe.com/products/premiere.html" target="_blank" rel="noreferrer"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Adobe_Premiere_Pro_CC_2026_icon.svg" alt="" loading="lazy" /><span>Premiere Pro</span></a>
+                <a className="software-app" href="https://www.canva.com/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/canva.svg" alt="" loading="lazy" /><span>Canva</span></a>
+                <a className="software-app" href="https://www.capcut.com/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/capcut.svg" alt="" loading="lazy" /><span>CapCut</span></a>
+                <a className="software-app" href="https://chatgpt.com/" target="_blank" rel="noreferrer"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/ChatGPT_logo.svg" alt="" loading="lazy" /><span>ChatGPT</span></a>
                 <a className="software-app" href="https://github.com/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/github/FFFFFF" alt="" loading="lazy" /><span>GitHub</span></a>
                 <a className="software-app" href="https://vercel.com/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/vercel/FFFFFF" alt="" loading="lazy" /><span>Vercel</span></a>
                 <a className="software-app" href="https://antigravity.google/" target="_blank" rel="noreferrer"><img src="https://antigravity.google/assets/image/brand/antigravity-icon__full-color.svg" alt="" loading="lazy" /><span>Antigravity</span></a>
