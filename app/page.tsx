@@ -18,18 +18,18 @@ const videoSources: Record<string, string> = {
 };
 
 const personal = [
-  { file: "1st.mp4", number: "01", name: "Motion Study", type: "PERSONAL EDIT", shape: "portrait" },
+  { file: "1st.mp4", number: "01", name: "The Ghost Within", type: "PERSONAL EDIT", shape: "portrait" },
   { file: "2nd.mp4", number: "02", name: "Visual Rhythm", type: "PERSONAL EDIT", shape: "portrait" },
   { file: "3rd.mp4", number: "03", name: "Frame by Frame", type: "PERSONAL EDIT", shape: "portrait" },
   { file: "4th.mp4", number: "04", name: "After Hours", type: "PERSONAL EDIT", shape: "portrait" },
-  { file: "5th.mp4", number: "05", name: "Moving Stories", type: "PERSONAL EDIT", shape: "portrait" },
+  { file: "5th.mp4", number: "05", name: "In Pursuit of Cinema", type: "PERSONAL EDIT", shape: "portrait" },
 ];
 const clients = [
-  { file: "6th.mp4", number: "06", name: "Brand Story", type: "CLIENT PROJECT", shape: "portrait" },
-  { file: "7th.mp4", number: "07", name: "Real Estate Film", type: "CLIENT PROJECT", shape: "portrait" },
-  { file: "8th.mp4", number: "08", name: "Creator Content", type: "CLIENT PROJECT", shape: "portrait" },
-  { file: "9th.mp4", number: "09", name: "Vertical Story", type: "CLIENT PROJECT", shape: "portrait" },
-  { file: "10th.mp4", number: "10", name: "Short-form Edit", type: "CLIENT PROJECT", shape: "portrait" },
+  { file: "6th.mp4", number: "06", name: "A Celebration of New Beginnings", type: "CLIENT PROJECT", shape: "portrait" },
+  { file: "7th.mp4", number: "07", name: "Little Moments, Forever", type: "CLIENT PROJECT", shape: "portrait" },
+  { file: "8th.mp4", number: "08", name: "The Grand Opening", type: "CLIENT PROJECT", shape: "portrait" },
+  { file: "9th.mp4", number: "09", name: "Brand in the Spotlight", type: "CLIENT PROJECT", shape: "portrait" },
+  { file: "10th.mp4", number: "10", name: "The Model Edit", type: "CLIENT PROJECT", shape: "portrait" },
 ];
 
 type Item = typeof personal[number];
