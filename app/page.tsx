@@ -76,13 +76,22 @@ export default function Home() {
       });
     }, { threshold: 0.12 });
     document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+    // Keep only one portfolio video playing at a time.
+    const pauseOtherVideos = (event: Event) => {
+      const activeVideo = event.target;
+      if (!(activeVideo instanceof HTMLVideoElement)) return;
+      document.querySelectorAll("video").forEach((video) => {
+        if (video !== activeVideo && !video.paused) video.pause();
+      });
+    };
+    document.addEventListener("play", pauseOtherVideos, true);
     const onScroll = () => {
       const progress = Math.min(window.scrollY / Math.max(window.innerHeight * 0.9, 1), 1);
       document.documentElement.style.setProperty("--hero-progress", String(progress));
     };
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
-    return () => { observer.disconnect(); window.removeEventListener("scroll", onScroll); };
+    return () => { observer.disconnect(); document.removeEventListener("play", pauseOtherVideos, true); window.removeEventListener("scroll", onScroll); };
   }, []);
 
   return (
